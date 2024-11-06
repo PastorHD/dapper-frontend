@@ -1,0 +1,23 @@
+:host {
+    position: relative;
+    overflow: hidden; /* Evita que el fondo sobresalga si es necesario */
+  }
+  
+  /* Fondo Circular */
+  .background-circle {
+    position: absolute;
+    top: -100px;
+    right: -200px;
+    width: 800px;
+    height: 800px;
+    background: linear-gradient(135deg, #1abc9c, #2ecc71);
+    border-radius: 50%;
+    border: 5px solid black; /* Agrega un borde negro */
+    z-index: 9999; /* Coloca el fondo detrás de otros elementos */
+  }
+  
+  /* Estilos de MainSection */
+  app-main-section {
+    position: relative;
+    z-index: 1; /* Asegura que MainSection esté encima del fondo */
+  }
