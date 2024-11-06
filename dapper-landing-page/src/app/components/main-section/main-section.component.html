@@ -10,6 +10,12 @@
         <button class="primary-btn">Get started</button>
       </div>
       
+      <!-- Email Form -->
+      <form [formGroup]="emailForm" (ngSubmit)="sendEmail()">
+        <input formControlName="email" type="email" placeholder="Enter your email" required>
+        <button type="submit">Get started</button>
+      </form>
+      
       <!-- Iconos de redes sociales -->
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook"></i> @x-capital</a>
