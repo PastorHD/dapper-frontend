@@ -16,7 +16,7 @@ import { MainSectionComponent } from './components/main-section/main-section.com
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    //HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

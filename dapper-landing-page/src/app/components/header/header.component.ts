@@ -2,11 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [],
+  standalone: true,  // Si quieres mantenerlo como standalone, déjalo; si no, puedes eliminar esta línea
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']  // Asegúrate de que sea styleUrls y no styleUrl
 })
-export class HeaderComponent {
+export class HeaderComponent {}
 
-}
