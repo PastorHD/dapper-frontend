@@ -1,0 +1,95 @@
+/* Estilos principales del contenedor */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background: linear-gradient(135deg, #ffffff 0%, #e8f9e9 100%);
+  }
+  
+  /* Estilos del contenido de texto */
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1 span {
+    color: #1abc9c; /* Color verde para resaltar "amet" */
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para los botones */
+  .button-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .secondary-btn,
+  .primary-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .secondary-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+  }
+  
+  .primary-btn {
+    background: linear-gradient(90deg, #1abc9c, #2ecc71);
+    color: #ffffff;
+    border: none;
+  }
+  
+  .primary-btn:hover {
+    background: linear-gradient(90deg, #16a085, #27ae60);
+  }
+  
+  /* Estilos para los iconos de redes sociales */
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #1abc9c;
+  }
+  
+  /* Estilos para la imagen del teléfono */
+  .image-content {
+    max-width: 40%;
+  }
+  
+  .image-content img {
+    width: 100%;
+    transform: rotate(-10deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
