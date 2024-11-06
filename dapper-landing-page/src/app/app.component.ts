@@ -12,4 +12,6 @@ import { FeaturesComponent } from './components/features/features.component';
 })
 export class AppComponent {
   title = 'my-app';
+  testValue: string = '';
+
 }

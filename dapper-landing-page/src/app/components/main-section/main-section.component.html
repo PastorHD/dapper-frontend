@@ -6,6 +6,13 @@
     <h1>Lorem ipsum dolor <br><span>sit amet</span></h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin sit amet dolor ac lobortis. Phasellus lobortis vitae elit non dictum. Vestibulum feugiat ex vitae pulvinar ornare.</p>
 
+
+  <!-- Formulario para capturar el correo -->
+    <div class="email-form">
+      <input type="email" [(ngModel)]="email" placeholder="Enter your email" />
+      <button (click)="sendEmail()">Get started</button>
+    </div>
+
     <!-- Botones -->
     <div class="buttons">
       <button class="button-gray">Lorem ipsum dolor sit amet</button>
