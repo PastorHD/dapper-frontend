@@ -2,8 +2,7 @@
 import { NgModule } from '@angular/core';  // Asegúrate de importar NgModule
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';  // Importa ReactiveFormsModule para los formularios reactivos
-import { HttpClientModule } from '@angular/common/http';  // Importa HttpClientModule para peticiones HTTP
-
+//import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; // Importa FormsModule
 
 
@@ -15,13 +14,13 @@ import { MainSectionComponent } from './components/main-section/main-section.com
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainSectionComponent
+    MainSectionComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    FormsModule
+    FormsModule,
+  //  HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
