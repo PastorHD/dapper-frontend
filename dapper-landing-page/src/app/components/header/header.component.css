@@ -1,62 +1,66 @@
-/* Haz que el Header esté en la parte superior y sea transparente */
-.navbar {
-  position: absolute;  /* Posiciona el Header en la parte superior */
-  top: 0;
-  left: 0;
-  width: 100%;
+  /* Haz que el Header esté en la parte superior y sea transparente */
+  .navbar {
+    position: absolute;  /* Posiciona el Header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: linear-gradient(135deg, rgba(253, 253, 253, 0.8), rgba(91, 205, 112, 0.6)); /* Degradado oscuro */
+
+    z-index: 1000; /* Asegura que el Header esté encima de otros elementos */
+  }
+
+  /* Logo */
+  .navbar-logo img {
+    height: 40px;  /* Ajusta el tamaño del logo */
+  }
+
+  /* Menú de navegación */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex: 2; /* Aumenta el espacio para centrar el menú */
+    justify-content: center; /* Centra el menú de navegación */
+  }
+
+  .navbar-menu li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .navbar-menu a {
+    text-decoration: none;
+    color: #fff;  /* Color blanco para el texto */
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-menu a:hover,
+  .navbar-menu a.active {
+    color: #ddd;
+    border-bottom: 2px solid #fff;  /* Línea debajo del enlace activo */
+  }
+
+  /* Botón de contacto */
+  .navbar-contact .contact-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar-contact .contact-button:hover {
+    flex: 1; /* El botón de contacto ocupa un espacio flexible a la derecha */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(255, 255, 255, 0.1); /* Fondo blanco con transparencia */
-  z-index: 1000; /* Asegura que el Header esté encima de otros elementos */
-}
-
-/* Logo */
-.navbar-logo img {
-  height: 40px;  /* Ajusta el tamaño del logo */
-}
-
-/* Menú de navegación */
-.navbar-menu {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-.navbar-menu li {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.navbar-menu a {
-  text-decoration: none;
-  color: #fff;  /* Color blanco para el texto */
-  padding: 5px;
-  transition: color 0.3s ease;
-}
-
-.navbar-menu a:hover,
-.navbar-menu a.active {
-  color: #ddd;
-  border-bottom: 2px solid #fff;  /* Línea debajo del enlace activo */
-}
-
-/* Botón de contacto */
-.navbar-contact .contact-button {
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
-  background-color: #fff;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.navbar-contact .contact-button:hover {
-  background-color: #eee;
-  color: #111;
-}
+  justify-content: flex-end; /* Alinea el botón de contacto a la derecha */
+  }
 
   
